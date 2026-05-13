@@ -56,7 +56,7 @@ Example Usage:
         >>> # Load results: results = pd.read_parquet('study.parquet')
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # Core functionality
 from .core import *

@@ -18,7 +18,9 @@ The library loads EnergyPlus IDF models into a pandas MultiIndex Series and retu
 
 ## Tutorials
 
-Video walkthroughs and example workflows are available on [YouTube](https://www.youtube.com/playlist?list=PLeusRYJFVlMggtunqVKRUbAd27a2nc61I)
+Video walkthroughs and example workflows are available on [YouTube](https://www.youtube.com/playlist?list=PLeusRYJFVlMggtunqVKRUbAd27a2nc61I).
+
+Download the [examples](https://github.com/eppdmodeler/eppd/tree/main/examples) folder to run sample scripts. The whole folder is needed because the scripts reference IDF files in the `refbld/` subfolder.
 
 ## Installation
 
@@ -26,30 +28,24 @@ Video walkthroughs and example workflows are available on [YouTube](https://www.
 pip install eppd
 ```
 
-Or, with [uv](https://docs.astral.sh/uv/):
-
-```bash
-uv add eppd
-```
-
 Requires a separate installation of EnergyPlus.
 
-After installing eppd, configure `energyplus_location`
-to point to the EnergyPlus executable on your system.
+**Configure EnergyPlus location:**
 
-Set in `eppd/config.toml`:
+1. Copy [`eppd/eppd.toml`](https://github.com/eppdmodeler/eppd/blob/main/eppd/eppd.toml) to your project directory.
+2. Update `energyplus_location` in `eppd.toml` to the full path of EnergyPlus executable. Examples:
 
-```toml
-[energyplus]
-# Linux
-energyplus_location = "/usr/local/EnergyPlus-26-1-0/energyplus"
+   ```toml
+   [energyplus]
+   # Linux
+   energyplus_location = "/usr/local/EnergyPlus-26-1-0/energyplus"
 
-# macOS
-# energyplus_location = "/Applications/EnergyPlus-26-1-0/energyplus"
+   # macOS
+   # energyplus_location = "/Applications/EnergyPlus-26-1-0/energyplus"
 
-# Windows
-# energyplus_location = "C:/EnergyPlusV26-1-0/energyplus.exe"
-```
+   # Windows
+   # energyplus_location = "C:/EnergyPlusV26-1-0/energyplus.exe"
+   ```
 
 ---
 
