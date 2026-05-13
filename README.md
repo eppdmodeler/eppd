@@ -18,12 +18,7 @@ The library loads EnergyPlus IDF models into a pandas MultiIndex Series and retu
 
 ## Tutorials
 
-Video walkthroughs and example workflows are available on YouTube:
-
-- [Part 1 — IDF manipulation and batch simulations](https://youtu.be/9-5VbZ8qjh0)
-- [Part 2 — HVAC system generation](https://youtu.be/luuZJyl7FQE)
-- [Part 3 — Parametric simulation workflows](https://youtu.be/XwX1-wUGoO0)
-- [Example walkthroughs and LLM integration](https://youtu.be/DgalSUS_ouY)
+Video walkthroughs and example workflows are available on [YouTube](https://www.youtube.com/playlist?list=PLeusRYJFVlMggtunqVKRUbAd27a2nc61I)
 
 ## Installation
 
